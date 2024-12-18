@@ -1,7 +1,7 @@
 import React from 'react';
-import './SignUp.css';
+import './Signin.css';
 
-function Signup() {
+function Signin() {
     const handleSubmit = (event) => {
         event.preventDefault(); 
     };
@@ -9,10 +9,10 @@ function Signup() {
     return (
         <div className="signup-container">
             <main className="signup-form-container">
-                <h1>Sign Up</h1>
+                <h1>Sign In</h1>
                 <form onSubmit={handleSubmit} className="signup-form">
                     <div className="form-group">
-                        <label htmlFor="email">Email Address:</label>
+                        <label htmlFor="email">Email Address Or Login:</label>
                         <input type="email" id="email" name="email" required />
                     </div>
 
@@ -21,13 +21,9 @@ function Signup() {
                         <input type="password" id="password" name="password" required />
                     </div>
 
-                    <div className="form-group">
-                        <label htmlFor="confirmPassword">Confirm Password:</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" required />
-                    </div>
-
+                    
                     <div className="button-container">
-                        <button type="submit" id="submitBtn">Sign Up</button>
+                        <button type="submit" id="submitBtn">Sign In</button>
                         <button type="reset" id="resetBtn">Reset</button>
                     </div>
                 </form>
@@ -40,4 +36,4 @@ function Signup() {
     );
 }
 
-export default Signup;
+export default Signin;

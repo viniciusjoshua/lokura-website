@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import './Header.css';
+
 
 export function Header() {
   return (
@@ -24,8 +24,8 @@ export function Header() {
           <li><Link to="/about">About</Link></li>
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/contact-us">Contact Us</Link></li>
-          <li><Link to="/login">Sign In</Link></li>
-          <li><Link to="/register">Sign Up</Link></li>
+          <li><Link to="/signin">Sign In</Link></li>
+          <li><Link to="/signup">Sign Up</Link></li>
         </ul>
       </nav>
     </header>

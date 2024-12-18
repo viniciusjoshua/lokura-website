@@ -1,98 +1,24 @@
-/* Sign-Up Page Styles */
-.sign-up-container {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6a1b9a;
-    color: white;
-    padding: 10px;
-  }
-  
-  header .logo img {
-    width: 100px;
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  header .logo p {
-    font-style: italic;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  main {
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    text-align: center;
-    color: #6a1b9a;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  form button {
-    width: 48%;
-    padding: 10px;
-    background-color: #6a1b9a;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 5px 0;
-  }
-  
-  form button:hover {
-    background-color: #9c4d99;
-  }
-  
-  footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    margin-top: 20px;
-  }
-  
+.signin-form, .signup-form {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.signin-form input, .signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.signin-form button, .signup-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.signin-form button:hover, .signup-form button:hover {
+  background-color: #9c4d99;
+}

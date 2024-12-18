@@ -95,31 +95,7 @@ aside {
   border-radius: 8px;
 }
 
-/* Sign In and Sign Up Forms */
-.signin-form, .signup-form {
-  width: 300px;
-  margin: 20px auto;
-  text-align: center;
-}
 
-.signin-form input, .signup-form input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-.signin-form button, .signup-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #6a1b9a;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.signin-form button:hover, .signup-form button:hover {
-  background-color: #9c4d99;
-}
 
 /* Footer */
 footer {

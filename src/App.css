@@ -34,7 +34,7 @@ header .logo-container .slogan {
 header .logo img {
   width: 150px; /* Logo size */
   height: auto;
-  margin-bottom: 15px; /* Spacing between logo and slogan */
+  margin-top: 15px; /* Spacing between logo and slogan */
 }
 
 /* Navigation Styling */

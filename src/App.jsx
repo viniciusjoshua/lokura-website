@@ -4,6 +4,7 @@ import Header from './components/Header.jsx';
 import Home from './components/pages/Home.jsx';
 import About from './components/pages/About.jsx';
 import Signup from './components/pages/Signup.jsx';
+import Signin from './components/pages/Signin.jsx';
 import Products from './components/pages/Products.jsx';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/signin" element={<Signin />} />
       </Routes>
       
     </div>

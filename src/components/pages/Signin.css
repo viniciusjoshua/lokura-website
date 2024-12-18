@@ -1,0 +1,58 @@
+
+.form-container {
+    width: 100%;
+    max-width: 400px; /* Max width for the form */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #6a1b9a; /* Title color */
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: #9c4d99;
+}
+
+/* Specific styles for Sign In Form */
+.signin-form .form-container {
+    max-width: 400px;
+}
+
+.signin-form h2 {
+    font-size: 24px; /* Adjust the size for the sign-in title */
+}
+
+/* Specific styles for Sign Up Form */
+.signup-form .form-container {
+    max-width: 400px;
+}
+
+.signup-form h2 {
+    font-size: 24px; /* Adjust the size for the sign-up title */
+}
