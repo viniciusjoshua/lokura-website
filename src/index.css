@@ -1,68 +1,160 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* Global Styling */
 body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  flex-direction: column;  /* Stack logo and slogan vertically */
+  justify-content: center;
+  align-items: center;
+  background-color: #6a1b9a; /* Header background */
+  padding: 20px 0;
+  color: white;
+}
+
+header .logo-container {
+  text-align: center;
+  margin-bottom: 20px; /* Space below the logo-container */
+}
+
+header .logo {
+  width: 150px; /* Adjust the logo size */
+  height: auto;
+}
+
+header .slogan {
+  font-style: italic;
+  font-size: 0.9rem; /* Smaller font size for the slogan */
+  color: white; /* Slogan color */
+  margin-top: 5px;  /* Add some space between the logo and slogan */
+  font-weight: bold;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  background-color: #333;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+nav ul li {
+  position: relative;
 }
 
-button {
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #333;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #9c4d99;
+}
+
+/* Main and Aside Layout */
+main {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.content {
+  width: 80%; /* 80% width for main content */
+}
+
+aside {
+  width: 20%; /* 20% width for the aside section */
+  background-color: #f9f9f9;
+  padding: 20px;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Sign In and Sign Up Forms */
+.signin-form, .signup-form {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.signin-form input, .signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.signin-form button, .signup-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.signin-form button:hover, .signup-form button:hover {
+  background-color: #9c4d99;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
   }
-  a:hover {
-    color: #747bff;
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
   }
-  button {
-    background-color: #f9f9f9;
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    margin-top: 20px;
   }
 }

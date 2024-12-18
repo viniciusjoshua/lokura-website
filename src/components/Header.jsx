@@ -1,16 +1,35 @@
-import { Nav, Navbar, NavbarCollapse, NavbarToggle } from 'react-bootstrap';
-import Container from 'react-bootstrap/Container';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
+import './Header.css';
 
-export function Header ( props ) {
-    return (
-        <><h1>{props.text}</h1><NavbarToggle aria-controls='main-nav' />
-        <Navbar.Collapse id="main-nav">
-            <Nav>
-                <Nav.link href="/">Home</Nav.link>
-                <Nav.Link href="/wines">wines</Nav.Link>
-                <Nav.Link href="/about">About</Nav.Link>
-                <Nav.Link href="/login">Sign in</Nav.Link>
-                <Nav.Link href="/register">Sign up</Nav.Link>
-            </Nav>
-        </Navbar.Collapse>
-                
+export function Header() {
+  return (
+    <header>
+      <div className="logo-container">
+        <p className="slogan">The best drinks in the town</p>
+        <img src={logo} alt="Logo" className="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li>
+            <Link to="/products">Products</Link>
+            <ul>
+              <li><Link to="/products/red-wine">Red Wine</Link></li>
+              <li><Link to="/products/rose">Rose</Link></li>
+              <li><Link to="/products/other-products">Other Products</Link></li>
+            </ul>
+          </li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/contact-us">Contact Us</Link></li>
+          <li><Link to="/login">Sign In</Link></li>
+          <li><Link to="/register">Sign Up</Link></li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;
